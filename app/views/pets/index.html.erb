@@ -1,0 +1,11 @@
+<h1>Found Pets</h1>
+
+
+<% @pets.each do |pet| %>
+  <p><%= pet.name %></p>
+  <p>found on <%= pet.date.strftime('%A, %b %d') %></p>
+  <%= link_to 'see more', pet_path(pet)   %>
+<% end %>
+
+
+<%= link_to 'found a pet?', new_pet_path  %>

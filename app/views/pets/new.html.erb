@@ -1,0 +1,8 @@
+<h1>Add a Pet</h1>
+<%= simple_form_for(@pet) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :species %>
+  <%= f.input :address %>
+  <%= f.input :date %>
+  <%= f.submit class: 'btn btn-success' %>
+<% end %>
